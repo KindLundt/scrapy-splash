@@ -39,7 +39,7 @@ class SplashRequest(scrapy.Request):
 
         if url is None:
             url = 'about:blank'
-        url = to_native_str(url)
+        url = url
 
         meta = copy.deepcopy(meta) or {}
         splash_meta = meta.setdefault('splash', {})
